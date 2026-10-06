@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Аэлита</title>
+<style>
+:root{
+  --bg:#14101c;
+  --fg:#f1ebf7;
+  --accent:#c9a7ff;
+  --glow:rgba(201,167,255,.28);
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f4eefb;--fg:#241838;--accent:#6a3fc4;--glow:rgba(106,63,196,.18)}
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg);
+  color:var(--fg);
+  font-family:Georgia,"Times New Roman",serif;
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;
+  background-image:radial-gradient(ellipse at 50% 40%,var(--glow),transparent 60%);
+}
+main{max-width:34rem}
+.name{
+  font-size:clamp(2.6rem,12vw,5rem);
+  font-style:italic;
+  font-weight:400;
+  margin:0 0 .4em;
+  color:var(--accent);
+}
+.quote{
+  font-size:clamp(1.5rem,6vw,2.2rem);
+  line-height:1.3;
+  margin:0;
+  padding-left:.9em;
+  border-left:3px solid var(--accent);
+}
+.emoji{font-size:1.2em;margin-left:.2em}
+</style>
+</head>
+<body>
+<main>
+  <h1 class="name">Аэлита</h1>
+  <p class="quote">В твою игру играют только пешки<span class="emoji">😶‍🌫️</span></p>
+</main>
+</body>
+</html>
